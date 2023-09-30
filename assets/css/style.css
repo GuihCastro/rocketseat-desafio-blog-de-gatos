@@ -1,0 +1,172 @@
+:root,
+input {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr;
+}
+
+header {
+    width: 100%;
+    background-color: var(--bars);
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    padding: 2.8rem 1.2rem;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+nav form {
+    flex: 1;
+}
+
+.input-wrapper label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    background-color: var(--search-bg);
+    width: 100%;
+    padding: 1.4rem 1.2rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--bars-text);
+    font-weight: 600;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+main article {
+    padding: 3.1rem 2.6rem 3.4rem 2.2rem;
+}
+
+article img {
+    width: 100%;
+}
+
+article h1 {
+    color: var(--body-titles);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 160%;
+    margin-bottom: .8rem;
+
+}
+
+.like-wrapper {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.like-wrapper button {
+    display: flex;
+    padding: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--bars);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+article .post {
+    margin-top: 3.1rem;
+}
+
+.post p {
+    color: var(--body-text);
+    font-weight: 400;
+    line-height: 160%;
+}
+
+aside {
+    padding: 0 2.6rem 3.9rem 2.2rem;
+}
+
+aside h2 {
+    color: var(--body-titles);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 160%;
+    margin-bottom: 3.2rem;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+aside nav .side-post {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.side-post img {
+    height: fit-content;
+    cursor: pointer;
+}
+
+.side-post .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.side-post .info h3 {
+    color: var(--body-titles);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.side-post .info p {
+    color: var(--body-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    height: 6.4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bars);
+}
+
+footer p {
+    color: var(--bars-text);
+    text-align: center;
+    font-weight: 600;
+}

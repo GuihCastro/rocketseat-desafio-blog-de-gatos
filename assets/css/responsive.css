@@ -1,0 +1,44 @@
+@media (min-width: 769px) {
+    body {
+        max-width: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main sidebar"
+        "footer footer";
+        column-gap: 3.4rem;
+    }
+
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4.4rem;
+    }
+
+    header nav {
+        max-width: 100rem;
+    }
+
+    main {
+        grid-area: main;
+        max-width: 80.3rem;
+        justify-self: end;
+    }
+
+    main img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+
+    aside {
+        grid-area: sidebar;
+        max-width: 38.4rem;
+        justify-self: start;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
